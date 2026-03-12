@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contatti – Sanitarie Riunite</title>
+  <meta name="description" content="Contatta Sanitarie Riunite per informazioni sui servizi di sanità integrativa."/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <div class="topbar">
+    <span><i class="fa fa-clock"></i> ORARI CENTRALINO: Lunedì – Venerdì 8.30 – 12.30</span>
+    <span><i class="fa fa-phone"></i> 02.40701676</span>
+  </div>
+
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="#1a5f5a" stroke-width="3"/>
+          <line x1="32" y1="18" x2="32" y2="46" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+          <line x1="18" y1="32" x2="46" y2="32" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Sanitarie Riunite</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html" class="active">Contatti</a>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata"><i class="fa fa-key"></i> Area Riservata</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Contatti</p>
+      <h1>Contattaci</h1>
+      <p>Siamo a tua disposizione per qualsiasi informazione sui nostri servizi di sanità integrativa.</p>
+    </div>
+  </section>
+
+  <section class="contatti-section">
+    <div class="container contatti-inner">
+      <div class="contatti-info">
+        <span class="section-label">DOVE SIAMO</span>
+        <h2>Parliamo insieme della tua salute</h2>
+        <p style="color:#6b7280;margin-bottom:32px;line-height:1.75;">Il nostro team è pronto ad ascoltarti e a trovare la soluzione più adatta alle tue esigenze. Contattaci telefonicamente, via email o compila il modulo accanto.</p>
+
+        <div class="info-item">
+          <i class="fa fa-location-dot"></i>
+          <div>
+            <h4>Sede Legale</h4>
+            <p>Via della Salute, 1<br/>20100 Milano (MI)</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-phone"></i>
+          <div>
+            <h4>Telefono</h4>
+            <p>02.40701676</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>info@sanitarieriunite.org</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa fa-clock"></i>
+          <div>
+            <h4>Orari di apertura</h4>
+            <p>Lunedì – Venerdì: 8.30 – 12.30<br/>Fuori orario: lascia un messaggio</p>
+          </div>
+        </div>
+
+        <div style="margin-top:36px;">
+          <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=500&q=80" alt="Il nostro ufficio" style="border-radius:14px;box-shadow:0 6px 24px rgba(26,95,90,0.13);width:100%;object-fit:cover;height:220px;"/>
+        </div>
+      </div>
+
+      <div class="contatti-form">
+        <h3>Invia un messaggio</h3>
+        <form action="#" method="post">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">Nome *</label>
+              <input type="text" id="nome" name="nome" placeholder="Il tuo nome" required/>
+            </div>
+            <div class="form-group">
+              <label for="cognome">Cognome *</label>
+              <input type="text" id="cognome" name="cognome" placeholder="Il tuo cognome" required/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="La tua email" required/>
+          </div>
+          <div class="form-group">
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Il tuo numero di telefono"/>
+          </div>
+          <div class="form-group">
+            <label for="tipo">Sei un *</label>
+            <select id="tipo" name="tipo" required>
+              <option value="">Seleziona...</option>
+              <option value="dipendente">Dipendente / Privato</option>
+              <option value="azienda">Azienda</option>
+              <option value="consulente">Consulente del Lavoro</option>
+              <option value="altro">Altro</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="messaggio">Messaggio *</label>
+            <textarea id="messaggio" name="messaggio" placeholder="Descrivi la tua richiesta..." required></textarea>
+          </div>
+          <div class="form-group">
+            <label style="display:flex;align-items:flex-start;gap:8px;font-weight:400;">
+              <input type="checkbox" required style="width:auto;margin-top:3px;"/>
+              <span style="font-size:0.85rem;color:#6b7280;">Ho letto e accetto la <a href="#" style="color:#1a5f5a;text-decoration:underline;">Privacy Policy</a> e autorizzo il trattamento dei miei dati personali.</span>
+            </label>
+          </div>
+          <button type="submit" class="btn-primary" style="border:none;cursor:pointer;width:100%;text-align:center;font-family:'Open Sans',sans-serif;">Invia il messaggio</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Preferisci chiamarci?</h2>
+      <p>Il nostro centralino è attivo dal Lunedì al Venerdì dalle 8.30 alle 12.30.</p>
+      <div class="cta-buttons">
+        <a href="tel:0240701676" class="btn-primary"><i class="fa fa-phone"></i> 02.40701676</a>
+        <a href="mailto:info@sanitarieriunite.org" class="btn-outline"><i class="fa fa-envelope"></i> Scrivi una email</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:14px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="30" stroke="white" stroke-width="3"/>
+            <line x1="32" y1="18" x2="32" y2="46" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <line x1="18" y1="32" x2="46" y2="32" stroke="white" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text" style="color:white;">Sanitarie Riunite</span>
+        </div>
+        <p>Società di Mutuo Soccorso. Assistenza sanitaria integrativa per tutti.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <p><i class="fa fa-phone"></i> 02.40701676</p>
+        <p><i class="fa fa-envelope"></i> info@sanitarieriunite.org</p>
+        <p><i class="fa fa-clock"></i> Lun–Ven: 8.30 – 12.30</p>
+      </div>
+      <div class="footer-col">
+        <h4>Area Riservata</h4>
+        <p>Accedi alla tua area personale per gestire la tua copertura sanitaria.</p>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata" style="margin-top:12px;display:inline-flex;"><i class="fa fa-key"></i> Accedi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sanitarie Riunite – Società di Mutuo Soccorso. Tutti i diritti riservati. | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+    </div>
+  </footer>
+
+</body>
+</html>
