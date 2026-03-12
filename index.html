@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanitarie Riunite – Società di Mutuo Soccorso</title>
+  <meta name="description" content="Sanitarie Riunite offre servizi di assistenza sanitaria integrativa per dipendenti, aziende e consulenti del lavoro."/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <span><i class="fa fa-clock"></i> ORARI CENTRALINO: Lunedì – Venerdì 8.30 – 12.30</span>
+    <span><i class="fa fa-phone"></i> 02.40701676</span>
+  </div>
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="#1a5f5a" stroke-width="3"/>
+          <line x1="32" y1="18" x2="32" y2="46" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+          <line x1="18" y1="32" x2="46" y2="32" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Sanitarie Riunite</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata"><i class="fa fa-key"></i> Area Riservata</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-images">
+        <div class="hero-img-grid">
+          <div class="img-main">
+            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?w=400&q=80" alt="Famiglia assistita"/>
+          </div>
+          <div class="img-circle img-circle-1">
+            <img src="https://images.unsplash.com/photo-1565043666747-69f6646db940?w=200&q=80" alt="Bambino sorridente"/>
+          </div>
+          <div class="img-circle img-circle-2">
+            <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=200&q=80" alt="Famiglia felice"/>
+          </div>
+          <div class="img-circle img-circle-3">
+            <img src="https://images.unsplash.com/photo-1547009386-b1b98c7e9a5a?w=200&q=80" alt="Bambino"/>
+          </div>
+          <div class="hero-dot"></div>
+          <div class="hero-shape"></div>
+        </div>
+      </div>
+      <div class="hero-text">
+        <p class="hero-subtitle">SOLUZIONI DI SANITÀ INTEGRATIVA PER PERSONE E IMPRESE</p>
+        <h1>SANITARIE RIUNITE<br/><span>SOCIETÀ DI MUTUO SOCCORSO</span></h1>
+        <p class="hero-desc">Offriamo servizi di assistenza sanitaria integrativa pensati per dipendenti, aziende e consulenti del lavoro, con soluzioni chiare, accessibili e orientate al benessere.</p>
+        <a href="servizi.html" class="btn-primary">Scopri i servizi</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="cards-section">
+    <div class="container cards-grid">
+      <div class="card card-brown">
+        <i class="fa-solid fa-user-tie card-icon"></i>
+        <h3>Dipendenti</h3>
+        <p>Tutela sanitaria integrativa pensata per il lavoratore e la sua famiglia, con accesso a prestazioni e prevenzione.</p>
+        <a href="servizi.html#dipendenti">Scopri di più <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="card card-teal">
+        <i class="fa-solid fa-building card-icon"></i>
+        <h3>Aziende</h3>
+        <p>Soluzioni di welfare sanitario per aziende che vogliono offrire un supporto concreto e sostenibile ai dipendenti.</p>
+        <a href="servizi.html#aziende">Scopri di più <i class="fa fa-arrow-right"></i></a>
+      </div>
+      <div class="card card-dark">
+        <i class="fa-solid fa-briefcase card-icon"></i>
+        <h3>Consulenti del Lavoro</h3>
+        <p>Strumenti e supporto nella gestione della sanità integrativa e dei servizi di welfare per le imprese.</p>
+        <a href="servizi.html#consulenti">Scopri di più <i class="fa fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vantaggi-section">
+    <div class="container vantaggi-inner">
+      <div class="vantaggi-text">
+        <p class="section-label">PERCHÉ SCEGLIERCI</p>
+        <h2>I vantaggi della sanità integrativa</h2>
+        <p>Con Sanitarie Riunite puoi accedere rapidamente a strutture sanitarie private convenzionate, riducendo i tempi di attesa e garantendo alla tua famiglia le migliori cure disponibili.</p>
+        <ul class="vantaggi-list">
+          <li><i class="fa fa-check"></i> Minori tempi di attesa grazie alle strutture private</li>
+          <li><i class="fa fa-check"></i> Rimborso parziale o totale delle spese sanitarie</li>
+          <li><i class="fa fa-check"></i> Servizi di prevenzione e check-up periodici</li>
+          <li><i class="fa fa-check"></i> Copertura per tutta la famiglia</li>
+          <li><i class="fa fa-check"></i> Rete di professionisti qualificati su tutto il territorio</li>
+        </ul>
+        <a href="chi-siamo.html" class="btn-primary">Chi Siamo</a>
+      </div>
+      <div class="vantaggi-image">
+        <img src="https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?w=500&q=80" alt="Medico con paziente"/>
+      </div>
+    </div>
+  </section>
+
+  <section class="numeri-section">
+    <div class="container numeri-grid">
+      <div class="numero-item">
+        <span class="numero">10.000+</span>
+        <span class="numero-label">Assistiti</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">500+</span>
+        <span class="numero-label">Aziende Partner</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">200+</span>
+        <span class="numero-label">Strutture Convenzionate</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">30+</span>
+        <span class="numero-label">Anni di Esperienza</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonial-section">
+    <div class="container">
+      <p class="section-label center">COSA DICONO I NOSTRI ASSISTITI</p>
+      <h2 class="center">Storie di benessere</h2>
+      <div class="testimonial-grid">
+        <div class="testimonial-card">
+          <p>"Grazie a Sanitarie Riunite ho potuto effettuare una visita specialistica in pochi giorni invece di aspettare mesi. Un servizio davvero prezioso per me e la mia famiglia."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&q=80" alt="Marco R."/>
+            <div>
+              <strong>Marco R.</strong>
+              <span>Dipendente, Milano</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Come HR manager, ho scelto Sanitarie Riunite per il nostro welfare aziendale. I dipendenti sono soddisfatti e l'implementazione è stata semplice e veloce."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1573496799652-408c2ac9fe98?w=60&q=80" alt="Laura M."/>
+            <div>
+              <strong>Laura M.</strong>
+              <span>HR Manager, Torino</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <p>"Come consulente del lavoro, finalmente ho uno strumento affidabile per proporre la sanità integrativa alle aziende clienti. Supporto eccellente."</p>
+          <div class="testimonial-author">
+            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=60&q=80" alt="Giuseppe T."/>
+            <div>
+              <strong>Giuseppe T.</strong>
+              <span>Consulente del Lavoro, Roma</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Vuoi saperne di più?</h2>
+      <p>Contattaci per una consulenza gratuita o scopri il piano più adatto alle tue esigenze.</p>
+      <div class="cta-buttons">
+        <a href="contatti.html" class="btn-primary">Contattaci</a>
+        <a href="servizi.html" class="btn-outline">I nostri servizi</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:14px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="30" stroke="white" stroke-width="3"/>
+            <line x1="32" y1="18" x2="32" y2="46" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <line x1="18" y1="32" x2="46" y2="32" stroke="white" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text" style="color:white;">Sanitarie Riunite</span>
+        </div>
+        <p>Società di Mutuo Soccorso. Assistenza sanitaria integrativa per tutti.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <p><i class="fa fa-phone"></i> 02.40701676</p>
+        <p><i class="fa fa-envelope"></i> info@sanitarieriunite.org</p>
+        <p><i class="fa fa-clock"></i> Lun–Ven: 8.30 – 12.30</p>
+      </div>
+      <div class="footer-col">
+        <h4>Area Riservata</h4>
+        <p>Accedi alla tua area personale per gestire la tua copertura sanitaria.</p>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata" style="margin-top:12px;display:inline-flex;"><i class="fa fa-key"></i> Accedi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sanitarie Riunite – Società di Mutuo Soccorso. Tutti i diritti riservati. | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
