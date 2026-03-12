@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servizi – Sanitarie Riunite</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+  <div class="topbar">
+    <span><i class="fa fa-clock"></i> ORARI CENTRALINO: Lunedì – Venerdì 8.30 – 12.30</span>
+    <span><i class="fa fa-phone"></i> 02.40701676</span>
+  </div>
+  <header class="main-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 64 64" fill="none">
+          <circle cx="32" cy="32" r="30" stroke="#1a5f5a" stroke-width="3"/>
+          <line x1="32" y1="18" x2="32" y2="46" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+          <line x1="18" y1="32" x2="46" y2="32" stroke="#1a5f5a" stroke-width="5" stroke-linecap="round"/>
+        </svg>
+        <span class="logo-text">Sanitarie Riunite</span>
+      </div>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="chi-siamo.html">Chi Siamo</a>
+        <a href="servizi.html" class="active">Servizi</a>
+        <a href="contatti.html">Contatti</a>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata"><i class="fa fa-key"></i> Area Riservata</a>
+      </nav>
+      <button class="menu-toggle" onclick="document.getElementById('main-nav').classList.toggle('open')">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <p class="breadcrumb"><a href="index.html">Home</a> / Servizi</p>
+      <h1>I nostri Servizi</h1>
+      <p>Soluzioni di sanità integrativa pensate per dipendenti, aziende e consulenti del lavoro.</p>
+    </div>
+  </section>
+
+  <!-- Dipendenti -->
+  <section class="servizio-section" id="dipendenti">
+    <div class="container servizio-inner">
+      <div class="servizio-text">
+        <div class="servizio-tag">PER I DIPENDENTI</div>
+        <h2>Tutela sanitaria per il lavoratore e la sua famiglia</h2>
+        <p>Con Sanitarie Riunite il dipendente accede a un piano di sanità integrativa che protegge lui e i suoi familiari, offrendo un ventaglio completo di prestazioni sanitarie in tempi certi, senza le lunghe attese del sistema pubblico.</p>
+        <ul class="servizio-list">
+          <li><i class="fa fa-check"></i> Visite specialistiche presso strutture private convenzionate</li>
+          <li><i class="fa fa-check"></i> Esami diagnostici e di laboratorio</li>
+          <li><i class="fa fa-check"></i> Ricoveri ospedalieri con rimborso parziale o totale</li>
+          <li><i class="fa fa-check"></i> Interventi chirurgici in regime di elezione</li>
+          <li><i class="fa fa-check"></i> Programmi di prevenzione e check-up periodici</li>
+          <li><i class="fa fa-check"></i> Odontoiatria convenzionata</li>
+          <li><i class="fa fa-check"></i> Copertura estesa al nucleo familiare</li>
+          <li><i class="fa fa-check"></i> Accesso all'area riservata per gestione pratiche e rimborsi</li>
+        </ul>
+        <a href="contatti.html" class="btn-primary">Richiedi informazioni</a>
+      </div>
+      <div class="servizio-image">
+        <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=520&q=80" alt="Dipendente con dottore"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Aziende -->
+  <section class="servizio-section bg-light" id="aziende">
+    <div class="container servizio-inner reverse">
+      <div class="servizio-image">
+        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?w=520&q=80" alt="Team aziendale"/>
+      </div>
+      <div class="servizio-text">
+        <div class="servizio-tag" style="background:#1a5f5a22;color:#1a5f5a;">PER LE AZIENDE</div>
+        <h2>Welfare sanitario aziendale sostenibile</h2>
+        <p>Offriamo alle aziende piani di sanità integrativa collettiva che migliorano il benessere dei dipendenti, aumentano la produttività e rafforzano la retention del personale, con un investimento fiscalmente vantaggioso.</p>
+        <ul class="servizio-list">
+          <li><i class="fa fa-check"></i> Piani sanitari collettivi personalizzabili</li>
+          <li><i class="fa fa-check"></i> Gestione centralizzata delle coperture</li>
+          <li><i class="fa fa-check"></i> Vantaggi fiscali per l'azienda e per i dipendenti</li>
+          <li><i class="fa fa-check"></i> Reportistica e monitoraggio utilizzo</li>
+          <li><i class="fa fa-check"></i> Supporto HR nella comunicazione interna</li>
+          <li><i class="fa fa-check"></i> Onboarding rapido e senza burocrazia</li>
+          <li><i class="fa fa-check"></i> Integrazione con sistemi di welfare esistenti</li>
+          <li><i class="fa fa-check"></i> Account dedicato per la gestione delle pratiche</li>
+        </ul>
+        <a href="contatti.html" class="btn-primary" style="background:#1a5f5a;">Richiedi una demo</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consulenti del Lavoro -->
+  <section class="servizio-section" id="consulenti">
+    <div class="container servizio-inner">
+      <div class="servizio-text">
+        <div class="servizio-tag">PER I CONSULENTI DEL LAVORO</div>
+        <h2>Strumenti professionali per la sanità integrativa</h2>
+        <p>Il consulente del lavoro è un partner fondamentale nella diffusione del welfare sanitario. Forniamo tutti gli strumenti necessari per proporre e gestire la sanità integrativa alle aziende clienti in modo semplice ed efficace.</p>
+        <ul class="servizio-list">
+          <li><i class="fa fa-check"></i> Area partner dedicata con materiali e risorse</li>
+          <li><i class="fa fa-check"></i> Formazione e aggiornamento professionale</li>
+          <li><i class="fa fa-check"></i> Supporto tecnico nella configurazione dei piani</li>
+          <li><i class="fa fa-check"></i> Gestione semplificata per più aziende clienti</li>
+          <li><i class="fa fa-check"></i> Documentazione contrattuale e normativa aggiornata</li>
+          <li><i class="fa fa-check"></i> Assistenza nella comunicazione con i dipendenti</li>
+          <li><i class="fa fa-check"></i> Reportistica aggregata multi-azienda</li>
+          <li><i class="fa fa-check"></i> Referente commerciale dedicato</li>
+        </ul>
+        <a href="contatti.html" class="btn-primary">Diventa partner</a>
+      </div>
+      <div class="servizio-image">
+        <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=520&q=80" alt="Consulente del lavoro"/>
+      </div>
+    </div>
+  </section>
+
+  <!-- Numeri -->
+  <section class="numeri-section">
+    <div class="container numeri-grid">
+      <div class="numero-item">
+        <span class="numero">10.000+</span>
+        <span class="numero-label">Assistiti</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">500+</span>
+        <span class="numero-label">Aziende Partner</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">200+</span>
+        <span class="numero-label">Strutture Convenzionate</span>
+      </div>
+      <div class="numero-item">
+        <span class="numero">30+</span>
+        <span class="numero-label">Anni di Esperienza</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container cta-inner">
+      <h2>Vuoi saperne di più?</h2>
+      <p>Contattaci per una consulenza gratuita o per ricevere un preventivo personalizzato.</p>
+      <div class="cta-buttons">
+        <a href="contatti.html" class="btn-primary">Contattaci</a>
+        <a href="chi-siamo.html" class="btn-outline">Chi Siamo</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="main-footer">
+    <div class="container footer-inner">
+      <div class="footer-col">
+        <div class="logo" style="margin-bottom:14px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 64 64" fill="none">
+            <circle cx="32" cy="32" r="30" stroke="white" stroke-width="3"/>
+            <line x1="32" y1="18" x2="32" y2="46" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <line x1="18" y1="32" x2="46" y2="32" stroke="white" stroke-width="5" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text" style="color:white;">Sanitarie Riunite</span>
+        </div>
+        <p>Società di Mutuo Soccorso. Assistenza sanitaria integrativa per tutti.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Link Rapidi</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="chi-siamo.html">Chi Siamo</a></li>
+          <li><a href="servizi.html">Servizi</a></li>
+          <li><a href="contatti.html">Contatti</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contatti</h4>
+        <p><i class="fa fa-phone"></i> 02.40701676</p>
+        <p><i class="fa fa-envelope"></i> info@sanitarieriunite.org</p>
+        <p><i class="fa fa-clock"></i> Lun–Ven: 8.30 – 12.30</p>
+      </div>
+      <div class="footer-col">
+        <h4>Area Riservata</h4>
+        <p>Accedi alla tua area personale per gestire la tua copertura sanitaria.</p>
+        <a href="https://areariservata.sanitarieriunite.org" class="btn-area-riservata" style="margin-top:12px;display:inline-flex;"><i class="fa fa-key"></i> Accedi</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sanitarie Riunite – Società di Mutuo Soccorso. Tutti i diritti riservati. | <a href="#">Privacy Policy</a> | <a href="#">Cookie Policy</a></p>
+    </div>
+  </footer>
+</body>
+</html>
