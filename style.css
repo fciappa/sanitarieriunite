@@ -30,14 +30,16 @@ body { font-family: 'Open Sans', sans-serif; color: var(--dark); background: var
 .topbar {
   background: var(--teal-dark);
   color: #cde8e6;
-  font-size: 0.82rem;
-  padding: 8px 32px;
+  font-size: 0.85rem;
+  font-style: italic;
+  letter-spacing: 0.02em;
+  padding: 9px 32px;
   display: flex;
   justify-content: center;
-  gap: 48px;
-  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
 }
-.topbar i { margin-right: 6px; }
+.topbar i { margin-right: 8px; color: #a8d8d4; }
 
 /* ---- HEADER ---- */
 .main-header {
@@ -178,45 +180,19 @@ body { font-family: 'Open Sans', sans-serif; color: var(--dark); background: var
   gap: 64px;
   align-items: center;
 }
-.hero-img-grid {
-  position: relative;
-  height: 480px;
-}
-.img-main {
-  position: absolute;
-  left: 0;
-  top: 20px;
-  width: 58%;
-  height: 400px;
+.hero-img-single {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 20px;
   overflow: hidden;
-  border-radius: 14px;
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 48px rgba(26,95,90,0.18);
 }
-.img-main img { width: 100%; height: 100%; object-fit: cover; }
-.img-circle {
-  position: absolute;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 4px solid white;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
-}
-.img-circle img { width: 100%; height: 100%; object-fit: cover; }
-.img-circle-1 { width: 110px; height: 110px; right: 30px; top: 10px; }
-.img-circle-2 { width: 130px; height: 130px; right: 0; top: 150px; }
-.img-circle-3 { width: 100px; height: 100px; right: 50px; bottom: 60px; }
-.hero-dot {
-  position: absolute;
-  width: 60px; height: 60px;
-  background: var(--gold-bg);
-  border-radius: 50%;
-  bottom: 80px; left: 20px;
-}
-.hero-shape {
-  position: absolute;
-  width: 80px; height: 80px;
-  background: var(--teal-light);
-  border-radius: 50% 0 50% 0;
-  top: 10px; right: 160px;
+.hero-img-single img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  object-position: center 30%;
+  display: block;
 }
 .hero-text { padding-left: 12px; }
 .hero-subtitle {
@@ -455,7 +431,7 @@ h2.center { font-family: 'Playfair Display', serif; font-size: 2.1rem; color: va
 @media (max-width: 1024px) {
   .hero-inner, .vantaggi-inner, .about-intro-inner, .servizio-inner, .contatti-inner { grid-template-columns: 1fr; gap: 48px; }
   .servizio-inner.reverse { direction: ltr; }
-  .hero-img-grid { height: 340px; }
+  .hero-img-single img { height: 320px; }
   .footer-inner { grid-template-columns: 1fr 1fr; }
   .cards-grid, .missione-inner, .valori-grid, .testimonial-grid, .numeri-grid { grid-template-columns: 1fr 1fr; }
 }
